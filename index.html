@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <title>Tento webový projekt</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>SNB Cinematics</title>
 </head>
-<body>
-    <h1>My Web Page</h1>    
+<body class="Home__Background">
+    <header>
+        <div class="Header__Conteiner">
+            <p>
+                <a href="About.html ">ABOUT</a>
+            </p>
+            <a href="index.html"><img src="./img/LesIkona.png" alt="Icon of a forest"></a>
+            <p>
+                <a href="Gallery.html">GALLERY</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="Heading">
+            <h1>SNB Cinematics</h1>
+            <p>VFX and 3D animation</p>
+        </div>
+        <section class="Explore__Conteiner">
+            <div class="Explore__Text">
+                <h2>Explore The 3D</h2>
+                <p>
+                    Step into our 3D art gallery and explore a world of imagination brought to life. 
+                    Our collection of stunning 3D models will transport you to new dimensions and inspire your creativity. 
+                    Browse our selection and discover the power of 3D art.
+                </p>
+            </div>
+            <div class="Explore__img swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="./img/CityDark.PNG" alt="Epic night city"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/DNDLandscape.png" alt="Wide forest land scape"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/DNDArmáda.png" alt="army marching to battle"></a></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <p class="Explore__SeeMore">SEE MORE</p>
+        </section>
+        <section class="Philosophy__Conteiner">
+            <h2>Our Philosophy</h2>
+            <a href="#"><img src="./img/SNBLOGO.png" alt="SNB Cinematics logo"></a>
+            <p>
+                Our philosophy is simple - we believe that anyone can create something beautiful with the right tools and guidance. 
+                We're passionate about teaching and inspiring others to explore their creativity and discover the amazing world of 3D art. 
+                Whether you're an experienced artist or a beginner just starting out, we're here to help you unlock your potential and unleash your imagination.
+            </p>
+        </section>
+    </main>
+    <footer>
+            <div class="Footer_Container">
+                <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
+                <div class="Footer__Line"></div>
+                <div>
+                    <a href="About.html">ABOUT</a>
+                    <a href="Gallery.html">GALLERY</a>
+                </div>
+                <div class="Footer__Line"></div>
+                <div class="Footer_Icons">
+                    <a href="#"><img src="./img/InstaagramIkona.png" alt="Instagram icon"></a>
+                    <a href="#"><img src="./img/FacebookIkona.png" alt="Facebook icon"></a>
+                </div>
+            </div>
+    </footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(".swiper", {
+            scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true
+        },
+        })
+
+      </script>
 </body>
 </html>
