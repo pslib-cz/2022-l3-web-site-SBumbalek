@@ -6,43 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="lightbox.css">
     <title>SNB Cinematics</title>
 </head>
 <body>
-    <header class="Header__Conteiner">
-        <div class="header__Text">
-            <p>
-                <a href="index.html">HOME</a>
-            </p>
-            <a href="index.html"><img src="./img/Ikona.jpg" alt="Icon of a forest"></a>
-            <p>
-                <a href="About.html ">ABOUT</a>
-            </p>
-        </div>
-    </header>
-    <div class="Heading">
-        <h1>GALLERY</h1>
+    <div class="Top__Background">
+        <header>
+            <div class="Header__Conteiner">
+                <p>
+                    <a href="index.html">HOME</a>
+                </p>
+                <a href="index.html"><img src="./img/LesIkona.png" alt="Icon of a forest"></a>
+                <p>
+                    <a href="About.html">ABOUT</a>
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="Heading">
+                <h1>GALLERY</h1>
+            </div>
     </div>
     <section class="Gallery__Portfolio">
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
-        <a><img src="./img/" alt=""></a>
+        <a href="./img/CityDark.png" data-lightbox="models" data-title="Caption1">
+            <img src="./img/CityDark.png" alt="">
+        </a>
+        <a href="./img/DNDLandscape.png" data-lightbox="models" data-title="Wide shot of mountains with forest"><img src="./img/DNDLandscape.png" alt="Wide shot of mountains with forest"></a>
+        <a href="./img/DNDArmáda.png" data-lightbox="models" data-title="Two armies approaching each other"><img src="./img/DNDArmáda.png" alt="Two armies approaching each other"></a>
+        <a href="./img/první krychle.png" data-lightbox="models" data-title="Abstract red cube in black"><img src="./img/první krychle.png" alt="Abstract red cube in black"></a>
+        <a href="./img/Piramidads.png" data-lightbox="models" data-title="A skull on the sand together with a pyramid in the background"><img src="./img/Piramidads.png" alt="A skull on the sand together with a pyramid in the background"></a>
+        <a href="./img/druhá Krychle.png" data-lightbox="models" data-title="Abstract cube above the altar in the blue-red room"><img src="./img/druhá Krychle.png" alt="Abstract cube above the altar in the blue-red room"></a>
+        <a href="./img/PlaneFyzika.png" data-lightbox="models" data-title="An airplane leaving behind a smoke trail"><img src="./img/PlaneFyzika.png" alt="An airplane leaving behind a smoke trail"></a>
+        <a href="./img/MagicCubeForest.PNG" data-lightbox="models" data-title="Magical shape in the forest on stones"><img src="./img/MagicCubeForest.PNG" alt="Magical shape in the forest on stones"></a>
+        <a href="./img/Portál.png" data-lightbox="models" data-title="Magical orange portal"><img src="./img/Portál.png" alt="Magical orange portal"></a>
     </section>
     <footer>
-        <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
-        <div class="Footer__Line"></div>
-        <div>
-            <a href="About.html">ABOUT</a>
-            <a href="Gallery.html">GALLERY</a>
+        <div class="Footer_Container">
+            <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
+            <div class="Footer__Line"></div>
+            <div>
+                <a href="index.html">HOME</a>
+                <a href="Gallery.html">GALLERY</a>
+            </div>
+            <div class="Footer__Line"></div>
+            <div class="Footer_Icons">
+                <a href="#"><img src="./img/InstaagramIkona.png" alt="Instagram icon"></a>
+                <a class="Footer__Facebook" href="#"><img src="./img/FacebookIkona.png" alt="Facebook icon"></a>
+            </div>
         </div>
-        <div class="Footer__Line"></div>
-        <a href="#"><img src="./img/InstagramLogo.jpg" alt="Instagram icon"></a>
-        <a href="#"><img src="./img/FacebookLogo.jpg" alt="Facebook icon"></a>
     </footer>
+    <script src="lightbox-plus-jquery.js"></script>
 </body>

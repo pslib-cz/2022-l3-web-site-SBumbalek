@@ -6,53 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="lightbox.css">
     <title>SNB Cinematics</title>
 </head>
 <body>
-    <header class="Header__Conteiner">
-        <div class="header__Text">
-            <p>
-                <a href="index.html">HOME</a>
-            </p>
-            <a href="index.html"><img src="./img/Ikona.jpg" alt="Icon of a forest"></a>
-            <p>
-                <a href="Gallery.html">GALLERY</a>
-            </p>
-        </div>
-    </header>
-    <div class="Heading">
-        <h1>ABOUT</h1>
+    <div class="Top__Background">
+        <header>
+            <div class="Header__Conteiner">
+                <p>
+                    <a href="index.html">HOME</a>
+                </p>
+                <a href="index.html"><img src="./img/LesIkona.png" alt="Icon of a forest"></a>
+                <p>
+                    <a href="Gallery.html">GALLERY</a>
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="Heading">
+                <h1>ABOUT</h1>
+            </div>
     </div>
-    <article class="About__Conteiner">
-        <section class="About__Stepan">
-            <a href="#"><img src="./img/Štěpán.png" alt="Photo of SNB Cinematics creator Stepan Bumbalek"></a>
-            <p>Stepan is the founder of SNB Cinematics. With a passion for technology and creativity, 
-                he has built a career around bringing innovative ideas to life. 
-                Stepan's dedication to his craft has helped him become a respected leader in the industry. 
-                He continues to push the limits of what is possible with 3D art and is committed to providing his 
-                clients with exceptional service and results.</p>
-        </section>
-        <div class="About__Line">
-
-        </div>
-        <section class="About__Tomas">
-            <p>Tomas is the creative head of SNB Cinematics. He brings a wealth of experience and passion for art and movies.
-                 His attention to detail, passion for storytelling, ability to think outside the box and his ability to bring
-                  ideas to life has earned him a reputation as one of the industry's top talents. His work has been featured
-                   in major publications and exhibitions, and he is committed to pushing the boundaries of what is possible
-                    with art and movies.</p>
-            <a href="#"><img src="./img/Tomáš.png" alt="Photo of SNB Cinematics creative head Tomas Machalka"></a>
-        </section>
-    </article>
-    <footer>
-        <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
-        <div class="Footer__Line"></div>
-        <div>
-            <a href="About.html">ABOUT</a>
-            <a href="Gallery.html">GALLERY</a>
-        </div>
-        <div class="Footer__Line"></div>
-        <a href="#"><img src="./img/InstagramLogo.jpg" alt="Instagram icon"></a>
-        <a href="#"><img src="./img/FacebookLogo.jpg" alt="Facebook icon"></a>
+    <div class="Mid__Background">
+        <article class="About__Conteiner">
+            <section class="About__Stepan">
+                <a href="./img/Štěpán.png" data-lightbox="models" data-title="Photo of SNB Cinematics creator Stepan Bumbalek">
+                    <img src="./img/Štěpán.png" alt="Photo of SNB Cinematics creator Stepan Bumbalek">
+                </a>
+                <p>Stepan is the founder of SNB Cinematics. With a passion for technology and creativity, 
+                    he has built a career around bringing innovative ideas to life. 
+                    Stepan's dedication to his craft has helped him become a respected leader in the industry. 
+                    He continues to push the limits of what is possible with 3D art and is committed to providing his 
+                    clients with exceptional service and results.</p>
+            </section>
+            <div class="About__Line">
+    
+            </div>
+            <section class="About__Tomas">
+                <p>Tomas is the creative head of SNB Cinematics. He brings a wealth of experience and passion for art and movies.
+                     His attention to detail, passion for storytelling, ability to think outside the box and his ability to bring
+                      ideas to life has earned him a reputation as one of the industry's top talents. His work has been featured
+                       in major publications and exhibitions, and he is committed to pushing the boundaries of what is possible
+                        with art and movies.</p>
+                <a href="./img/Tomáš.png" data-lightbox="models" data-title="Photo of SNB Cinematics creative head Tomas Machalka">
+                    <img src="./img/Tomáš.png" alt="Photo of SNB Cinematics creative head Tomas Machalka">
+                </a>
+            </section>
+        </article>
+        <footer>
+            <div class="Footer_Container">
+                <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
+                <div class="Footer__Line"></div>
+                <div>
+                    <a href="index.html">HOME</a>
+                    <a href="Gallery.html">GALLERY</a>
+                </div>
+                <div class="Footer__Line"></div>
+                <div class="Footer_Icons">
+                    <a href="#"><img src="./img/InstaagramIkona.png" alt="Instagram icon"></a>
+                    <a class="Footer__Facebook" href="#"><img src="./img/FacebookIkona.png" alt="Facebook icon"></a>
+                </div>
+            </div>
     </footer>
+    </div>
+    <script src="lightbox-plus-jquery.js"></script>
 </body>

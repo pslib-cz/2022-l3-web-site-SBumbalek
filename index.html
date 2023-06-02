@@ -10,66 +10,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="lightbox.css">
     <title>SNB Cinematics</title>
 </head>
-<body class="Home__Background">
-    <header>
-        <div class="Header__Conteiner">
-            <p>
-                <a href="About.html ">ABOUT</a>
-            </p>
-            <a href="index.html"><img src="./img/LesIkona.png" alt="Icon of a forest"></a>
-            <p>
-                <a href="Gallery.html">GALLERY</a>
-            </p>
-        </div>
-    </header>
-    <main>
-        <div class="Heading">
-            <h1>SNB Cinematics</h1>
-            <p>VFX and 3D animation</p>
-        </div>
-        <section class="Explore__Conteiner">
-            <div class="Explore__Text">
-                <h2>Explore The 3D</h2>
+<body>
+    <div class="Top__Background">
+        <header>
+            <div class="Header__Conteiner">
                 <p>
-                    Step into our 3D art gallery and explore a world of imagination brought to life. 
-                    Our collection of stunning 3D models will transport you to new dimensions and inspire your creativity. 
-                    Browse our selection and discover the power of 3D art.
+                    <a href="About.html ">ABOUT</a>
+                </p>
+                <a href="index.html"><img src="./img/LesIkona.png" alt="Icon of a forest"></a>
+                <p>
+                    <a href="Gallery.html">GALLERY</a>
                 </p>
             </div>
-            <div class="Explore__img swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="./img/CityDark.PNG" alt="Epic night city"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="./img/DNDLandscape.png" alt="Wide forest land scape"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="./img/DNDArmáda.png" alt="army marching to battle"></a></div>
-                </div>
-                <div class="swiper-scrollbar"></div>
+        </header>
+        <main>
+            <div class="Heading">
+                <h1>SNB Cinematics</h1>
+                <p>VFX and 3D animation</p>
             </div>
-            <p class="Explore__SeeMore">SEE MORE</p>
-        </section>
-        <section class="Philosophy__Conteiner">
-            <h2>Our Philosophy</h2>
-            <a href="#"><img src="./img/SNBLOGO.png" alt="SNB Cinematics logo"></a>
-            <p>
-                Our philosophy is simple - we believe that anyone can create something beautiful with the right tools and guidance. 
-                We're passionate about teaching and inspiring others to explore their creativity and discover the amazing world of 3D art. 
-                Whether you're an experienced artist or a beginner just starting out, we're here to help you unlock your potential and unleash your imagination.
-            </p>
-        </section>
+    </div>
+            <article class="Mid__Background">
+                <section class="Explore__Conteiner">
+                    <div class="Explore__Text">
+                        <h2>Explore The 3D</h2>
+                        <p>
+                            Step into our 3D art gallery and explore a world of imagination brought to life. 
+                            Our collection of stunning 3D models will transport you to new dimensions and inspire your creativity. 
+                            Browse our selection and discover the power of 3D art.
+                        </p>
+                    </div>
+                    <div class="Explore__img swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="./img/CityDark.png" data-lightbox="models" data-title="Epic night city"><img src="./img/CityDark.png" alt="Epic night city"></a></div>
+                            <div class="swiper-slide"><a href="./img/DNDLandscape.png" data-lightbox="models" data-title="Wide forest landscape"><img src="./img/DNDLandscape.png" alt="Wide forest landscape"></a></div>
+                            <div class="swiper-slide"><a href="./img/DNDArmáda.png" data-lightbox="models" data-title="Two armies approaching each other"><img src="./img/DNDArmáda.png" alt="Two armies approaching each other"></a></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <a class="Explore__SeeMore" href="Gallery.html"><span>SEE MORE</span><i></i></a>
+                </section>
+                <section class="Philosophy__Conteiner">
+                    <h2>Our Mission</h2>
+                    <div class="Philosophy__Flex">
+                        <a href="./img/SNBLOGO.png" data-lightbox="models" data-title="Caption1"><img src="./img/SNBLOGO.png" alt="SNB Cinematics logo"></a>
+                        <p>
+                            Our mission is simple - we believe that anyone can create something beautiful with the right tools and guidance. 
+                            We're passionate about teaching and inspiring others to explore their creativity and discover the amazing world of 3D art. 
+                            Whether you're an experienced artist or a beginner just starting out, we're here to help you unlock your potential and unleash your imagination.
+                        </p>
+                    </div>
+                </section>
+            </article>
     </main>
     <footer>
-            <div class="Footer_Container">
-                <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
-                <div class="Footer__Line"></div>
-                <div>
-                    <a href="About.html">ABOUT</a>
-                    <a href="Gallery.html">GALLERY</a>
-                </div>
-                <div class="Footer__Line"></div>
-                <div class="Footer_Icons">
-                    <a href="#"><img src="./img/InstaagramIkona.png" alt="Instagram icon"></a>
-                    <a href="#"><img src="./img/FacebookIkona.png" alt="Facebook icon"></a>
+            <div class="Footer_Home">
+                <div class="Footer_Container">
+                    <p>© 2022 SNB CINEMATICS. All rights reserved.</p>
+                    <div class="Footer__Line"></div>
+                    <div>
+                        <a href="About.html">ABOUT</a>
+                        <a href="Gallery.html">GALLERY</a>
+                    </div>
+                    <div class="Footer__Line"></div>
+                    <div class="Footer_Icons">
+                        <a href="#"><img src="./img/InstaagramIkona.png" alt="Instagram icon"></a>
+                        <a class="Footer__Facebook" href="#"><img src="./img/FacebookIkona.png" alt="Facebook icon"></a>
+                    </div>
                 </div>
             </div>
     </footer>
@@ -77,12 +90,24 @@
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
       
         const swiper = new Swiper(".swiper", {
-            scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
         },
+        breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+  }
         })
-
       </script>
+      <script src="lightbox-plus-jquery.js"></script>
 </body>
 </html>
