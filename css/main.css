@@ -26,7 +26,7 @@ h2 {
 
 p{
     font-weight: 100;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 html {
@@ -64,12 +64,24 @@ html {
     margin: auto;
 }
 
-.Header__Conteiner a {
+.Header_Text {
     color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.Header_Text:hover {
+    text-shadow: 0 0 1px var(--blue-color), 0 0 2px var(--blue-color), 0 0 4px var(--blue-color), 0 0 8px var(--blue-color), 0 0 16px var(--blue-color), 0 0 32px var(--blue-color);
+    filter: drop-shadow(0 0 15px var(--blue-color)) drop-shadow(0 0 50px var(--blue-color));
 }
 
 .Header__Conteiner img {
     max-width: 20px;
+    transition: 0.5s;
+}
+
+.Header__Conteiner img:hover {
+    filter: drop-shadow(0 0 5px var(--blue-color)) drop-shadow(0 0 10px var(--blue-color)) drop-shadow(0 0 15px var(--blue-color));
 }
 
 .Heading {
@@ -81,6 +93,10 @@ html {
 .Heading p {
     font-weight: 100;
     margin: 0;
+}
+
+.Heading_Hidden {
+    display: none;
 }
 
 .Explore__Conteiner {
@@ -127,10 +143,10 @@ html {
 }
 
 .Explore__SeeMore:hover {
-    background: #007aff;
-    color: #007aff;
+    background: var(--blue-color);
+    color: var(--blue-color);
     letter-spacing: 0.25em;
-    box-shadow: 0 0 35px #007aff;
+    box-shadow: 0 0 35px var(--blue-color);
 }
 
 .Explore__SeeMore::before
@@ -192,12 +208,11 @@ html {
     max-width: 450px;
     box-shadow: 0 0 40px 20px rgb(23 17 16);
     border-radius: 5px;
-    transition: box-shadow 1s ease, transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .Philosophy__Conteiner img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 60px 20px rgb(231, 154, 67);
+    transform: scale(1.12);
 }
 
 
@@ -242,6 +257,16 @@ html {
 
 Footer p {
     margin: 0;
+    font-size: 16px;
+}
+
+.Footer__Text a{
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.Footer__Text a:hover {
+    text-shadow: 0 0 1px var(--blue-color), 0 0 2px var(--blue-color), 0 0 4px var(--blue-color), 0 0 8px var(--blue-color), 0 0 16px var(--blue-color), 0 0 32px var(--blue-color);
 }
 
 .Footer__Facebook {
@@ -250,6 +275,14 @@ Footer p {
 
 .Footer_Container a {
     color: #fff;
+}
+
+.Footer_Icons a{
+    transition: 0.5s;
+}
+
+.Footer_Icons a:hover {
+    filter: drop-shadow(0 0 5px var(--blue-color)) drop-shadow(0 0 10px var(--blue-color)) drop-shadow(0 0 15px var(--blue-color));
 }
 
 .About__Conteiner img {
@@ -306,8 +339,8 @@ Footer p {
 }
 
 .Gallery__Portfolio img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 60px 20px rgb(231, 174, 67);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px 10px rgb(231, 174, 67);
 }
 
 @media (min-width: 450px) {
@@ -340,9 +373,6 @@ Footer p {
     }
     .Heading {
         margin: 110px;
-    }
-    p {
-        font-size: 15px;
     }
     h2 {
         font-size: 30px;
@@ -377,10 +407,11 @@ Footer p {
     }
     .Footer_Container {
         flex-direction: row;
-        max-width: 700px;
         margin: auto;
         padding-bottom: 50px;
         margin-top: 150px;
+        align-items: center;
+        justify-content: center;
     }
     .Footer_Home {
         padding-top: 340px;
@@ -421,10 +452,10 @@ Footer p {
 
 @media (min-width: 1200px) {
     p {
-        font-size: 18px;
+        font-size: 22px;
     }
     h2 {
-        font-size: 35px;
+        font-size: 32px;
         margin-bottom: 70px;
     }
     h1 {
@@ -459,7 +490,7 @@ Footer p {
         transition: box-shadow 1s ease, transform 0.3s ease;
     }
     .Explore__img img:hover {
-        transform: scale(1.2);
+        transform: scale(1.12);
     }
     .Philosophy__Conteiner {
         max-width: 1000px;
@@ -476,5 +507,11 @@ Footer p {
     .Explore__SeeMore {
         font-size: 20px;
         width: 200px;
+    }
+    Footer p {
+        font-size: 18px;
+    }
+    .Footer__Text {
+        font-size: 18px;
     }
 }
